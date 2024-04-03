@@ -20,6 +20,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])
 
 	$user_data = 'uname='. $uname. '&name='. $name;
 
+	// check username 
 
 	if (empty($uname)) {
 		header("Location: signup.php?error=User Name is required&$user_data");
